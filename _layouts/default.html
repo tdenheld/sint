@@ -20,6 +20,13 @@
     <title>
         {{ page.title }}
     </title>
+    
+    <script>
+        // #fix safari back button browser cache issue
+        window.onpageshow = (e) => {
+            if (e.persisted) window.location.reload();
+        }
+    </script>
 </head>
 
 <body>
