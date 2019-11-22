@@ -3,15 +3,17 @@
     width: 100%;
     padding: 20px 0 8px;
     border-bottom: 2px solid $brand;
-    @include font(36px, 700, $lh-solid);
+    @include font(36px, 400, $lh-solid);
     -webkit-appearance: none;
     font-family: $serif;
     letter-spacing: 0.5em;
 
     &::placeholder {
-        font-weight: 500;
-        color: $grey-8;
+        font-weight: 400;
+        color: $grey-7;
+        @include font(24px, 400, 48px);
         letter-spacing: normal;
+        font-family: $sans;
     }
 
     &:-webkit-autofill {
