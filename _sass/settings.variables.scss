@@ -1,0 +1,84 @@
+/*-------------------
+      Animation
+--------------------*/
+
+$ease:						cubic-bezier(0.700, 0.270, 0.270, 1);
+$ease-expo:			        cubic-bezier(1.000, 0.000, 0.000, 1);
+$ease-out:			        cubic-bezier(0.200, 0.900, 0.400, 1);
+$fade-all: 					all 300ms $ease;
+$fade-link:                 all 200ms $ease;
+
+
+
+
+/*-------------------
+	   Spacers
+--------------------*/
+
+$grid-gutter-width: 24px;
+
+$triple-gutter:				$grid-gutter-width * 3;
+$double-gutter:				$grid-gutter-width * 2;
+$one-half-gutter:			$grid-gutter-width * 1.5;
+
+$gutter:					$grid-gutter-width;
+$half-gutter:				$grid-gutter-width / 2;
+$quarter-gutter:			$grid-gutter-width / 4;
+
+
+
+
+/*-------------------
+    Media queries
+--------------------*/
+
+$xs: 480px;
+$sm: 768px;
+$md: 912px;
+$lg: 1280 + $double-gutter * 2;
+$xl: 1440px;
+
+
+
+
+/*-------------------
+        Fonts
+--------------------*/
+
+$serif: 'tw-serif', 'Palatino', Georgia, Times, serif;
+$sans: 'tw-sans', Helvetica, Arial, sans-serif;
+
+$lh-copy: 1.55;
+$lh-title: 1.2;
+$lh-solid: 1;
+
+
+/*-------------------
+        Colors
+--------------------*/
+
+$black: #000;
+$white: #fff;
+
+$brand: #800;
+$brand-dark: mix($black, $brand, 15%);
+
+$bg: #764;
+
+$light:      mix($white, $bg, 90%);
+$dark:       mix($black, $brand, 0%);
+
+$grey:       mix($light, $dark, 10%);
+$grey-1:     mix($light, $dark, 20%);
+$grey-2:     mix($light, $dark, 30%);
+$grey-3:     mix($light, $dark, 40%);
+$grey-4:     mix($light, $dark, 50%);
+$grey-5:     mix($light, $dark, 60%);
+$grey-6:     mix($light, $dark, 70%);
+$grey-7:     mix($light, $dark, 80%);
+$grey-8:     mix($light, $dark, 90%);
+$grey-9:     mix($light, $dark, 95%);
+
+// themes
+$dark-dark: #1a1a1a;
+$dark-light: #ccc;

@@ -1,0 +1,21 @@
+.input {
+    display: block;
+    width: 100%;
+    padding: 20px 0 8px;
+    border-bottom: 2px solid $brand;
+    @include font(36px, 700, $lh-solid);
+    -webkit-appearance: none;
+    font-family: $serif;
+    letter-spacing: 0.5em;
+
+    &::placeholder {
+        font-weight: 500;
+        color: $grey-8;
+        letter-spacing: normal;
+    }
+
+    &:-webkit-autofill {
+        box-shadow: inset 0 0 0 1000px mix($white, $dark, 90%);
+        -webkit-text-fill-color: $brand;
+    }
+}
