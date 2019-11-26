@@ -30,15 +30,15 @@ const input = () => {
     input.addEventListener('keyup', () => {
         if (input.value === '0906') {
             input.blur();
-            overlay.style.transform = 'translateX(100vw)';
-            overlay.style.display = 'flex';
-
-            gsap.to(overlay, {
+            gsap.fromTo(overlay, {
+                display: 'flex',
+                x: '100vw',
+            },{
                 duration: 0.7,
                 delay: delay,
                 ease: 'power4.inOut',
                 opacity: 1,
-                x: 0
+                x: 0,
             });
         }
     });
